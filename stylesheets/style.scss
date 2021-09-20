@@ -4,8 +4,8 @@ body.noscroll{
   overflow: hidden;
 }
 .l-wrap {
+  min-width: 350px;
   text-align:center;
-
   a {
     text-decoration:none; 
   }
@@ -14,13 +14,12 @@ body.noscroll{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 120px;
-    padding: 0 20px;
+    padding: 20px;
     background-color: v.$main;
 
-    &__title {
+    .l-header__title {
       color: v.$title;
-      font-size: 80px;
+      
     }
 
     .burger-btn{
@@ -29,8 +28,6 @@ body.noscroll{
       height: 39px;
       position: relative;
       z-index: 3;
- 
-   
     }
     .bar{
       width: 20px;
@@ -98,6 +95,9 @@ body.noscroll{
   .l-main {
     background-color: v.$bg-color;
 
+    .p-common:first-child {
+      padding-top: 40px;
+    }
     .p-common {
       padding-top: 100px;
 
@@ -113,8 +113,7 @@ body.noscroll{
       }
       .p-about__box {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        
         margin-top: 40px;
 
         .p-aboutIcon {
@@ -129,7 +128,7 @@ body.noscroll{
         }
 
         .p-aboutMenu {
-          margin: 0 25px;
+          
           list-style: none;
 
           &__list {
@@ -154,7 +153,6 @@ body.noscroll{
         margin-top: 40px;
 
         &__box {
-          width: 25%;
           padding: 15px;
           background-color: #FFF;
           .p-work__title {
@@ -170,11 +168,9 @@ body.noscroll{
         }
       }
 
-      
-
       .container {
         margin: 40px auto 0;
-        width: 70%;
+        width: 75%;
       }
       .slick-img img {
         height: auto;
@@ -187,12 +183,10 @@ body.noscroll{
         opacity: 1;
         transform: scale(1);
       }
-      
-      
-      
     }
+
     .bottom {
-      padding-bottom: 140px;
+      padding-bottom: 120px;
     }
     .page_top {
       position: fixed;
@@ -200,15 +194,70 @@ body.noscroll{
       right: 20px;
     }
     .page_top a {
-      background-color: #999;
+      background-color: rgba(102,102,102,0.5);
       color: #fff;
       text-align: center;
       text-decoration: none;
       padding: 20px 20px;
     }
     .page_top a:hover {
-      background-color: #666;
       text-decoration: none;
     }
   }
+}
+
+@media screen and (max-width: 768px) {
+  .l-header__title {
+    font-size: 53px;
+  }
+
+  .p-about__box {
+    flex-wrap: wrap;
+    .p-aboutIcon {
+      width: 100%;
+      margin: 0 25px;
+    }
+    .p-aboutMenu {
+      margin: 40px 25px 0;
+    }
+  }
+
+  .p-works {
+    flex-wrap: wrap;
+    &__box {
+      width: 100%;
+      margin-bottom: 28px;
+    }
+    &__box:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  
+
+  
+}
+
+@media screen and (min-width: 769px) {
+  .l-header__title {
+    font-size: 80px;
+  }
+
+  .p-about__box {
+    justify-content: center;
+    align-items: center;
+    .p-aboutMenu {
+      margin: 0 25px;
+    }
+  }
+
+  .p-works {
+    justify-content: space-around;
+    list-style: none;
+    &__box {
+      width: 25%;
+    }
+  }
+
+  
 }
