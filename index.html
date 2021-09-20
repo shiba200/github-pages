@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="./stylesheets/style.css">
+  <link rel="stylesheet" href="./stylesheets/reset.css">
+  <link rel="stylesheet" type="text/css" href="./slick.css"/>
+  <link rel="stylesheet" type="text/css" href="./slick-theme.css"/>
+  <script type="text/javascript" src="./slick.min.js"></script>
+  <title>Portfolio</title>
+</head>
+<body>
+<div class="l-wrap">
+  
+  <header class="l-header">
+    <h1 class="l-header__title">Portfolio</h1>
+    <div class="nav-wrapper">
+      <nav class="header-nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-text" href="#sec1">ABOUT</a></li>
+          <li class="nav-item"><a class="nav-text" href="#sec2">WORKS</a></li>
+          <li class="nav-item"><a class="nav-text" href="#sec3">PORTFOLIO</a></li>
+          <li class="nav-item"><a class="nav-text" href="#sec4">FORM</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="burger-btn">
+      <span class="bar bar_top"></span>
+      <span class="bar bar_mid"></span>
+      <span class="bar bar_bottom"></span>
+    </div>
+  </header>
+
+  <main class="l-main">
+    <section class="p-common">
+      <p id="sec1" class="p-common__nav">ABOUT</p>
+      <h2 class="p-common__title">自己紹介</h2>
+      <div class="p-about__box">
+        <div class="p-aboutIcon">
+          <img src="./image/IMG_0766.JPG" alt="プロフィール" class="p-aboutIcon__img">
+        </div>
+        <ul class="p-aboutMenu">
+          <li class="p-aboutMenu__list">
+            名前 : 柴田　大輔
+          </li>
+          <li class="p-aboutMenu__list">
+            出身 : 山形県（現在は都内在住）
+          </li>
+          <li class="p-aboutMenu__list">
+            活動 : 2年間、webサイトの作成に関わって来ました</br>
+            キャンペーンページからコーポレートサイトまで</br>
+            レスポンシブ対応のサイト作成を行います
+          </li>
+          <li class="p-aboutMenu__list">
+            その他 : 介護福祉士の資格も持っているので</br>
+            介護のアドバイスも出来ます（笑）
+          </li>
+        </ul>
+      </div> 
+    </section>
+
+    <section class="p-common">
+      <p id="sec2" class="p-common__nav">WORKS</p>
+      <h2 class="p-common__title">案件内容</h2>
+      <ul class="p-works">
+        <li class="p-works__box">
+          <img src="./image/プログラムアイコン.png" alt="アイコン01" class="p-works__icon">
+          <h3 class="p-work__title">Web制作</h3>
+          <p class="p-work__text">JavaScript, jQueryを使用し動的なwebサイトの作成を行うことが出来ます。</p>
+        </li>
+        <li class="p-works__box">
+          <img src="./image/キラキラ装飾アイコン2.png" alt="アイコン02" class="p-works__icon">
+          <h3 class="p-work__title">コーディング</h3>
+          <p class="p-work__text">Sassの使用、FLOCSSをベースとした設計思想で、メンテナンス性と拡張性に優れたページ設計が可能です。</p>
+        </li>
+        <li class="p-works__box">
+          <img src="./image/ワードプレスのアイコン.png" alt="アイコン03" class="p-works__icon">
+          <h3 class="p-work__title">WordPress</h3>
+          <p class="p-work__text">WordPressを使用したサイトの更新、ページの編集を行うことが出来ます。</p>
+        </li>
+      </ul>
+      
+    </section>
+
+    <section class="p-common bottom">
+      <p id="sec3" class="p-common__nav">PORTFOLIO</p>
+      <h2 class="p-common__title">制作実績</h2>
+      <div class="container">
+        <div class="slider">
+          <div class="slick-img">
+            <img
+              src="image/遊びながら欧文フォントを覚えるカードゲームを作りたい！.png"
+              alt=""
+            />
+          </div>
+          <div class="slick-img">
+            <img
+              src="image/SAMPLE.png"
+              alt=""
+            />
+          </div>
+          <div class="slick-img">
+            <img
+              src="image/SAMPLE.png"
+              alt=""
+            />
+          </div>
+          <div class="slick-img">
+            <img
+              src="image/SAMPLE.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      
+      
+    </section>
+
+    <section id="sec4" class="p-from">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd_Idsp-tDbaZKTJJ8r3fdwtGtadwgbnxh7zXsrKdrwEEFs9w/viewform?embedded=true" width="640" height="700" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+    </section>
+    <div class="page_top"><a href="#">TOP</a></div>
+  </main>
+
+  <footer class="l-footer">
+
+  </footer>
+
+  
+
+  
+</div>
+<script src="./script.js"></script>
+<script src="./main.js"></script>
+</body>
+</html>

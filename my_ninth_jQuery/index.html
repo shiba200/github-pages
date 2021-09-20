@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title></title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<ul class="lists clearfix"></ul>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+
+"use strict";
+
+$(function(){
+  var $cards = $(".lists"),
+      numbers = [],
+      totalCard = 16;
+
+  for (var i = 1; i <= totalCard/2; i++){
+    numbers.push(i,i);
+  }
+
+  numbers.sort(function(){
+    return Math.random() - Math.random();
+  })
+  var listItems = numbers.map(function(num){
+    return "<li class='unopened' data-num='" + num + "'>?</li>";
+  })
+
+  $cards.append(listItems);
+
+  $cards.find("li").click(function(){
+    var $openedCard = $(this);
+
+    open($openedCard);
+
+    setTimeout(function(){
+      compare($openedCard);
+    }, 500);
+
+  });
+
+  function open($card){
+    $card.css('pointer-events','none')
+         .text($card.data('num'));
+  };
+
+  function close($card){
+    $card.css('pointer-events','')
+         .text('?');
+  };
+
+
+  function compare($card){
+    if($('.firstOpen').length == 0){
+      $card.addClass('firstOpen');
+
+    } else {
+      var $firstCard = $('.firstOpen'),
+          $secondCard = $card,
+          firstNum = $firstCard.data('num'),
+          secondNum = $secondCard.data('num');
+
+      $firstCard.removeClass('firstOpen');
+
+      if(firstNum === secondNum){
+        $firstCard.removeClass('unopened');
+        $secondCard.removeClass('unopened');
+
+        if($('.unopened').length ===0){
+          alert("Game Clear");
+        }
+
+      } else {
+        close($firstCard);
+        close($secondCard);
+      }
+    }
+  }
+});
+</script>
+</body>
+</html>

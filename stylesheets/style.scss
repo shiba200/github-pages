@@ -1,0 +1,214 @@
+@use 'var' as v;
+
+body.noscroll{
+  overflow: hidden;
+}
+.l-wrap {
+  text-align:center;
+
+  a {
+    text-decoration:none; 
+  }
+
+  .l-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    padding: 0 20px;
+    background-color: v.$main;
+
+    &__title {
+      color: v.$title;
+      font-size: 80px;
+    }
+
+    .burger-btn{
+      display: block;
+      width: 39px;
+      height: 39px;
+      position: relative;
+      z-index: 3;
+ 
+   
+    }
+    .bar{
+      width: 20px;
+      height: 1px;
+      display: block;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #fff;
+    }
+    .bar_top{
+      top: 10px;
+    }
+    .bar_mid{
+      top: 50%;
+      transform: translate(-50%,-50%);
+    }
+    .bar_bottom{
+      bottom: 10px;
+    }
+    .burger-btn.close .bar_top{
+      transform: translate(-50%,10px) rotate(45deg);
+      transition: transform .3s;
+    }
+    .burger-btn.close .bar_mid{
+      opacity: 0;
+      transition: opacity .3s;
+    }
+    .burger-btn.close .bar_bottom{
+      transform: translate(-50%,-8px) rotate(-45deg);
+      transition: transform .3s;
+    }
+    .nav-wrapper{
+      display: none;
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 2;
+     }
+     .header-nav{
+        width: 100%;
+        height: 100%;
+        background-color:#1B1310;
+        z-index: 2;
+      }
+     .header-nav .nav-list{
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+      }
+      .header-nav .nav-item{
+        margin-right: 0;
+        margin-bottom: 40px;
+      }
+      .nav-text {
+        color: v.$title;
+      }
+  }
+
+  .l-main {
+    background-color: v.$bg-color;
+
+    .p-common {
+      padding-top: 100px;
+
+      &__nav {
+        font-size: 30px;
+        color: v.$main; 
+        padding-top: 30px;
+      }
+      &__title {
+        font-size: 70px;
+        color: v.$sb;
+        margin-top: 5px;
+      }
+      .p-about__box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+
+        .p-aboutIcon {
+          margin: 0 25px;
+
+          &__img {
+            width: 320px;
+            height: 320px;
+            border-radius: 50%;
+            background-position: center;
+          }
+        }
+
+        .p-aboutMenu {
+          margin: 0 25px;
+          list-style: none;
+
+          &__list {
+            text-align: left;
+            font-size: 30px;
+            line-height:30px;
+            margin-bottom: 25px;
+            color: v.$font;
+          }
+          &__list:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      .p-works {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        width: 80%;
+        margin:auto;
+        margin-top: 40px;
+
+        &__box {
+          width: 25%;
+          padding: 15px;
+          background-color: #FFF;
+          .p-work__title {
+            font-size: 28px;
+            margin-top: 5px;
+            color: v.$font;
+          }
+          .p-work__text {
+            font-size: 18px;
+            margin-top: 10px;
+            color: v.$font;
+          }
+        }
+      }
+
+      
+
+      .container {
+        margin: 40px auto 0;
+        width: 70%;
+      }
+      .slick-img img {
+        height: auto;
+        opacity: .3;
+        transform: scale(.8);
+        transition: opacity .5s, transform .5s;
+        width: 100%;
+      }
+      .slider .slick-center img {
+        opacity: 1;
+        transform: scale(1);
+      }
+      
+      
+      
+    }
+    .bottom {
+      padding-bottom: 140px;
+    }
+    .page_top {
+      position: fixed;
+      bottom: 30px;
+      right: 20px;
+    }
+    .page_top a {
+      background-color: #999;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      padding: 20px 20px;
+    }
+    .page_top a:hover {
+      background-color: #666;
+      text-decoration: none;
+    }
+  }
+}
