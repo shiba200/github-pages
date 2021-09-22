@@ -5,12 +5,14 @@ $(function() {
     centerMode: true,
     centerPadding: '0px',
     slidesToShow: 3,
-  });
-});
-
-$(function() {
-  $('.test').slick({
-    autoplay: true,
-    dots: true
+    responsive: [
+      {
+        breakpoint: 769, //399px以下のサイズに適用
+        settings: {
+          arrows: false,
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
 });
