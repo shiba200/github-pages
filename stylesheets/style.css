@@ -86,7 +86,7 @@ body.noscroll {
 .l-wrap .l-header .header-nav {
   width: 100%;
   height: 100%;
-  background-color: #1B1310;
+  background-color: #E0E3DA;
   z-index: 2;
 }
 .l-wrap .l-header .header-nav .nav-list {
@@ -103,7 +103,7 @@ body.noscroll {
   margin-bottom: 40px;
 }
 .l-wrap .l-header .nav-text {
-  color: #FFFFF3;
+  color: #566270;
 }
 .l-wrap .l-main {
   background-color: #E0E3DA;
@@ -128,14 +128,17 @@ body.noscroll {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 40px;
 }
 .l-wrap .l-main .p-common .p-about__box .p-aboutIcon {
   margin: 0 25px;
 }
 .l-wrap .l-main .p-common .p-about__box .p-aboutIcon__img {
-  width: 320px;
-  height: 320px;
+  width: 280px;
+  height: 280px;
   border-radius: 50%;
   background-position: center;
 }
@@ -144,9 +147,9 @@ body.noscroll {
 }
 .l-wrap .l-main .p-common .p-about__box .p-aboutMenu__list {
   text-align: left;
-  font-size: 30px;
+  font-size: 16px;
   line-height: 30px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   color: #3B3C3D;
 }
 .l-wrap .l-main .p-common .p-about__box .p-aboutMenu__list:last-child {
@@ -159,7 +162,7 @@ body.noscroll {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   list-style: none;
-  width: 80%;
+  width: 75%;
   margin: auto;
   margin-top: 40px;
 }
@@ -173,7 +176,7 @@ body.noscroll {
   color: #3B3C3D;
 }
 .l-wrap .l-main .p-common .p-works__box .p-work__text {
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 10px;
   color: #3B3C3D;
 }
@@ -251,9 +254,6 @@ body.noscroll {
   }
 
   .p-about__box {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
