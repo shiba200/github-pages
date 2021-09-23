@@ -197,6 +197,56 @@ body.noscroll {
   transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
   width: 100%;
 }
+.l-wrap .l-main .p-common .container .wrap {
+  width: 100%;
+  margin-top: 40px;
+}
+.l-wrap .l-main .p-common .container .wrap label {
+  display: block;
+  padding: 8px;
+  color: #566270;
+  cursor: pointer;
+}
+.l-wrap .l-main .p-common .container .wrap input[type=checkbox] {
+  display: none;
+}
+.l-wrap .l-main .p-common .container .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 0;
+  overflow: hidden;
+}
+.l-wrap .l-main .p-common .container .content .test {
+  position: relative;
+  margin: 25px 0;
+}
+.l-wrap .l-main .p-common .container .content .test .mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.l-wrap .l-main .p-common .container .content .test .mask .caption {
+  font-size: 18px;
+  text-align: center;
+  padding-top: 132px;
+  color: #fff;
+}
+.l-wrap .l-main .p-common .container .switch:checked + .content {
+  height: auto;
+}
 .l-wrap .l-main .bottom {
   padding-bottom: 120px;
 }
@@ -256,14 +306,12 @@ body.noscroll {
     margin-bottom: 0;
   }
 
-  .mask {
-    background-color: #fff;
-    padding: 8px;
+  .wrap label {
+    font-size: 20px;
   }
-  .mask .caption {
-    font-size: 13px;
-    text-align: center;
-    color: #566270;
+
+  .mask {
+    opacity: 1;
   }
 }
 @media screen and (min-width: 769px) {
@@ -300,28 +348,15 @@ body.noscroll {
     font-size: 28px;
   }
 
-  .slick-list {
-    position: relative;
-  }
-  .slick-list .mask {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    background-color: rgba(0, 0, 0, 0.4);
-    -webkit-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-  }
-  .slick-list .mask .caption {
-    font-size: 18px;
-    text-align: center;
-    padding-top: 80px;
-    color: #fff;
+  .wrap label {
+    font-size: 28px;
   }
 
-  .slick-list:hover .mask {
+  .mask {
+    opacity: 0;
+  }
+
+  .test:hover .mask {
     opacity: 1;
   }
 }
