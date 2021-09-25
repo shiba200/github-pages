@@ -8,11 +8,11 @@
 	>
 
 <channel>
-	<title>testページ</title>
+	<title>ブログ投稿サイト</title>
 	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../index.html</link>
+	<link>./index.html</link>
 	<description>Just another WordPress site</description>
-	<lastBuildDate>Fri, 27 Aug 2021 17:20:35 +0000</lastBuildDate>
+	<lastBuildDate>Sat, 25 Sep 2021 12:29:06 +0000</lastBuildDate>
 	<language>ja</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -20,49 +20,44 @@
 	1	</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=5.8.1</generator>
 	<item>
-		<title>投稿テスト</title>
-		<link>./../2021/08/28/%e6%8a%95%e7%a8%bf%e3%83%86%e3%82%b9%e3%83%88/index.html</link>
-					<comments>./../2021/08/28/%e6%8a%95%e7%a8%bf%e3%83%86%e3%82%b9%e3%83%88/index.html#respond</comments>
+		<title>犬について</title>
+		<link>./%e6%8a%95%e7%a8%bf%e3%83%86%e3%82%b9%e3%83%88-2/.html</link>
+					<comments>./%e6%8a%95%e7%a8%bf%e3%83%86%e3%82%b9%e3%83%88-2/.html#respond</comments>
 		
 		<dc:creator><![CDATA[wp-user]]></dc:creator>
-		<pubDate>Fri, 27 Aug 2021 17:20:35 +0000</pubDate>
-				<category><![CDATA[未分類]]></category>
-		<guid isPermaLink="false">./../index.html?p=5</guid>
+		<pubDate>Sat, 25 Sep 2021 12:07:12 +0000</pubDate>
+				<category><![CDATA[ペット]]></category>
+		<guid isPermaLink="false">./index.html?p=16</guid>
 
-					<description><![CDATA[見出し こうなってるんだー]]></description>
-										<content:encoded><![CDATA[
-<h2>見出し</h2>
-
-
-
-<p>こうなってるんだー</p>
-
-
-
-<figure class="wp-block-image size-large is-style-default"><img loading="lazy" width="1024" height="684" src="./../wp-content/uploads/2021/08/IMG_9132-1024x684.jpeg" alt="" class="wp-image-6" srcset="./../wp-content/uploads/2021/08/IMG_9132-1024x684.jpeg 1024w, ./../wp-content/uploads/2021/08/IMG_9132-300x200.jpeg 300w, ./../wp-content/uploads/2021/08/IMG_9132-768x513.jpeg 768w, ./../wp-content/uploads/2021/08/IMG_9132.jpeg 1258w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+					<description><![CDATA[htmlで入力してみた。]]></description>
+										<content:encoded><![CDATA[<p>htmlで入力してみた。</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../2021/08/28/%e6%8a%95%e7%a8%bf%e3%83%86%e3%82%b9%e3%83%88/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>./%e6%8a%95%e7%a8%bf%e3%83%86%e3%82%b9%e3%83%88-2/.html/feed/index.html</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
 			</item>
 		<item>
-		<title>Hello world!</title>
-		<link>./../2021/08/28/hello-world/index.html</link>
-					<comments>./../2021/08/28/hello-world/index.html#comments</comments>
+		<title>初投稿</title>
+		<link>./%e6%8a%95%e7%a8%bf%e3%83%86%e3%82%b9%e3%83%88/.html</link>
+					<comments>./%e6%8a%95%e7%a8%bf%e3%83%86%e3%82%b9%e3%83%88/.html#comments</comments>
 		
 		<dc:creator><![CDATA[wp-user]]></dc:creator>
-		<pubDate>Fri, 27 Aug 2021 16:21:58 +0000</pubDate>
-				<category><![CDATA[未分類]]></category>
-		<guid isPermaLink="false">./../index.html?p=1</guid>
+		<pubDate>Fri, 27 Aug 2021 17:20:35 +0000</pubDate>
+				<category><![CDATA[風景]]></category>
+		<guid isPermaLink="false">./index.html?p=5</guid>
 
-					<description><![CDATA[WordPress へようこそ。こちらは最初の投稿です。編集 ...]]></description>
+					<description><![CDATA[こうなってるんだー]]></description>
 										<content:encoded><![CDATA[
-<p>WordPress へようこそ。こちらは最初の投稿です。編集または削除し、コンテンツ作成を始めてください。</p>
+<p>こうなってるんだー</p>
+
+
+
+<figure class="wp-block-image size-large is-style-default"><img loading="lazy" width="1024" height="684" src="./wp-content/uploads/2021/08/IMG_9132-1024x684.jpeg" alt="" class="wp-image-6" srcset="./wp-content/uploads/2021/08/IMG_9132-1024x684.jpeg 1024w, ./wp-content/uploads/2021/08/IMG_9132-300x200.jpeg 300w, ./wp-content/uploads/2021/08/IMG_9132-768x513.jpeg 768w, ./wp-content/uploads/2021/08/IMG_9132.jpeg 1258w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../2021/08/28/hello-world/feed/index.html</wfw:commentRss>
+					<wfw:commentRss>./%e6%8a%95%e7%a8%bf%e3%83%86%e3%82%b9%e3%83%88/.html/feed/index.html</wfw:commentRss>
 			<slash:comments>1</slash:comments>
 		
 		

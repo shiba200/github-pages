@@ -7,11 +7,11 @@
 	>
 <channel>
 	<title>
-	testページ へのコメント	</title>
+	ブログ投稿サイト へのコメント	</title>
 	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../../index.html</link>
+	<link>./../index.html</link>
 	<description>Just another WordPress site</description>
-	<lastBuildDate>Fri, 27 Aug 2021 16:21:58 +0000</lastBuildDate>
+	<lastBuildDate>Sat, 25 Sep 2021 12:22:35 +0000</lastBuildDate>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
@@ -19,19 +19,15 @@
 	<generator>https://wordpress.org/?v=5.8.1</generator>
 	<item>
 		<title>
-		WordPress コメントの投稿者 より Hello world! へのコメント		</title>
-		<link>./../../2021/08/28/hello-world/index.html#comment-1</link>
+		wp-user より 初投稿 へのコメント		</title>
+		<link>./../%e6%8a%95%e7%a8%bf%e3%83%86%e3%82%b9%e3%83%88/.html#comment-2</link>
 
-		<dc:creator><![CDATA[WordPress コメントの投稿者]]></dc:creator>
-		<pubDate>Fri, 27 Aug 2021 16:21:58 +0000</pubDate>
-		<guid isPermaLink="false">./../../index.html?p=1#comment-1</guid>
+		<dc:creator><![CDATA[wp-user]]></dc:creator>
+		<pubDate>Sat, 25 Sep 2021 06:41:34 +0000</pubDate>
+		<guid isPermaLink="false">./../index.html?p=5#comment-2</guid>
 
-					<description><![CDATA[こんにちは、これはコメントです。
-コメントの承認、編集、削除を始めるにはダッシュボードの「コメント画面」にアクセスしてください。
-コメントのアバターは「&lt;a href=&quot;https://gravatar.com&quot;&gt;Gravatar&lt;/a&gt;」から取得されます。]]></description>
-			<content:encoded><![CDATA[<p>こんにちは、これはコメントです。<br />
-コメントの承認、編集、削除を始めるにはダッシュボードの「コメント画面」にアクセスしてください。<br />
-コメントのアバターは「<a href="https://gravatar.com/">Gravatar</a>」から取得されます。</p>
+					<description><![CDATA[test]]></description>
+			<content:encoded><![CDATA[<p>test</p>
 ]]></content:encoded>
 		
 			</item>

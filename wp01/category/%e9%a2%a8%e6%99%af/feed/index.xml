@@ -8,11 +8,11 @@
 	>
 
 <channel>
-	<title>wp-user &#8211; ブログ投稿サイト</title>
-	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<title>風景 &#8211; ブログ投稿サイト</title>
+	<atom:link href="./../%E9%A2%A8%E6%99%AF/feed/index.html" rel="self" type="application/rss+xml" />
 	<link>./../../index.html</link>
 	<description>Just another WordPress site</description>
-	<lastBuildDate>Sat, 25 Sep 2021 12:29:06 +0000</lastBuildDate>
+	<lastBuildDate>Sat, 25 Sep 2021 12:22:35 +0000</lastBuildDate>
 	<language>ja</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -20,25 +20,6 @@
 	1	</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=5.8.1</generator>
 	<item>
-		<title>犬について</title>
-		<link>./../../%e6%8a%95%e7%a8%bf%e3%83%86%e3%82%b9%e3%83%88-2/.html</link>
-					<comments>./../../%e6%8a%95%e7%a8%bf%e3%83%86%e3%82%b9%e3%83%88-2/.html#respond</comments>
-		
-		<dc:creator><![CDATA[wp-user]]></dc:creator>
-		<pubDate>Sat, 25 Sep 2021 12:07:12 +0000</pubDate>
-				<category><![CDATA[ペット]]></category>
-		<guid isPermaLink="false">./../../index.html?p=16</guid>
-
-					<description><![CDATA[htmlで入力してみた。]]></description>
-										<content:encoded><![CDATA[<p>htmlで入力してみた。</p>
-]]></content:encoded>
-					
-					<wfw:commentRss>./../../%e6%8a%95%e7%a8%bf%e3%83%86%e3%82%b9%e3%83%88-2/.html/feed/index.html</wfw:commentRss>
-			<slash:comments>0</slash:comments>
-		
-		
-			</item>
-		<item>
 		<title>初投稿</title>
 		<link>./../../%e6%8a%95%e7%a8%bf%e3%83%86%e3%82%b9%e3%83%88/.html</link>
 					<comments>./../../%e6%8a%95%e7%a8%bf%e3%83%86%e3%82%b9%e3%83%88/.html#comments</comments>
