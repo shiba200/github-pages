@@ -1,11 +1,15 @@
 @use 'var' as v;
 
+body {
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  }
 body.noscroll{
   overflow: hidden;
 }
 .l-wrap {
   min-width: 350px;
   text-align:center;
+
   a {
     text-decoration:none; 
   }
@@ -28,6 +32,7 @@ body.noscroll{
       position: relative;
       z-index: 3;
     }
+
     .bar{
       width: 20px;
       height: 1px;
@@ -101,12 +106,10 @@ body.noscroll{
       padding-top: 100px;
 
       &__nav {
-        
         color: v.$main; 
         padding-top: 30px;
       }
       &__title {
-        
         color: v.$sb;
         margin-top: 5px;
       }
@@ -127,7 +130,6 @@ body.noscroll{
         }
 
         .p-aboutMenu {
-          
           list-style: none;
 
           &__list {
@@ -154,6 +156,7 @@ body.noscroll{
         &__box {
           padding: 15px;
           background-color: #FFF;
+
           .p-works__title {
             margin-top: 5px;
             color: v.$font;
@@ -161,6 +164,7 @@ body.noscroll{
           .p-works__text {
             font-size: 16px;
             margin-top: 10px;
+            line-height: 1.5;
             color: v.$font;
           }
         }
@@ -174,7 +178,6 @@ body.noscroll{
           opacity: 1;
           transform: scale(1);
         }
-
         .slick-img img {
           height: auto;
           opacity: .3;
@@ -182,24 +185,19 @@ body.noscroll{
           transition: opacity .5s, transform .5s;
           width: 100%;
         }
-
         .wrap {
           width: 100%;
           margin-top: 40px;
         }
-        
         .wrap label {
           display: block;
           padding : 8px;
           color: v.$sb;
-          
           cursor: pointer;
         }
-        
         .wrap input[type="checkbox"] {
           display: none;
         }
-        
         .content {
           display: flex;
           justify-content: space-around;
@@ -207,7 +205,6 @@ body.noscroll{
           align-items: center;
           height: 0;
           overflow: hidden;
-          
 
           .test {
             position: relative;
@@ -219,13 +216,10 @@ body.noscroll{
               position: absolute; 
               top: 0;
               left: 0;
-              
               background-color: rgba(0,0,0,0.4);
               -webkit-transition: all 0.2s ease;
               transition: all 0.2s ease;
 
-              
-        
               .caption {
                 font-size: 18px;
                 text-align: center;
@@ -234,16 +228,15 @@ body.noscroll{
               }
             }
           }
- 
-          
-        
         }
         .switch:checked + .content {
           height: auto;
-          
+          animation: fadein 2s;
         } 
-
-        
+        @keyframes fadein{
+          from{ opacity: 0; }
+          to{ opacity: 1; }
+        }
       }
     }
 
@@ -279,7 +272,6 @@ body.noscroll{
   .p-common__title {
     font-size: 37px;
   }
-
   .p-about__box {
     flex-wrap: wrap;
     
@@ -294,6 +286,7 @@ body.noscroll{
 
   .p-works {
     flex-wrap: wrap;
+
     &__box {
       width: 100%;
       margin-bottom: 28px;
@@ -308,23 +301,17 @@ body.noscroll{
   }
   
   .wrap label {
-    
     font-size: 20px;
-    
   }
-  
   .mask {
     opacity: 1;
   }
-  
 }
 
 @media screen and (min-width: 769px) {
   .l-header__title {
     font-size: 60px;
   }
-
-  
 
   .p-common__nav {
     font-size: 28px;
@@ -354,21 +341,12 @@ body.noscroll{
   }
 
   .wrap label {
-    
     font-size: 28px;
-    
   }
-
   .mask {
-    
     opacity:0;  
-    
-    
   }
-
-
-.test:hover .mask {
-  opacity: 1;
-}
-  
+  .test:hover .mask {
+    opacity: 1;
+  } 
 }

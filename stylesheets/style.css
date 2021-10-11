@@ -1,3 +1,8 @@
+@charset "UTF-8";
+body {
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+}
+
 body.noscroll {
   overflow: hidden;
 }
@@ -175,6 +180,7 @@ body.noscroll {
 .l-wrap .l-main .p-common .p-works__box .p-works__text {
   font-size: 16px;
   margin-top: 10px;
+  line-height: 1.5;
   color: #3B3C3D;
 }
 .l-wrap .l-main .p-common .container {
@@ -246,6 +252,24 @@ body.noscroll {
 }
 .l-wrap .l-main .p-common .container .switch:checked + .content {
   height: auto;
+  -webkit-animation: fadein 2s;
+          animation: fadein 2s;
+}
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .l-wrap .l-main .bottom {
   padding-bottom: 120px;
